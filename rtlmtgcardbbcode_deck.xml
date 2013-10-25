@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bbcode>
+  <tag>deck</tag>
+  <title>Magic decklists</title>
+  <description>Format a Magic decklist, with links to card images on mouseover.</description>
+  <replacement>
+    <begin><![CDATA[]]></begin>
+    <end><![CDATA[]]></end>
+  </replacement>
+  <phpcallback>
+    <class>RtlMtgCardBbCode_BbCode_Formatter_Base</class>
+    <method>parseTagDeck</method>
+  </phpcallback>
+  <example><![CDATA[[deck="My Very First Jund Deck"]Creatures
+4 Putrid Leech #LSV says don't play any, but...?
+4 Sprouting Thrinax
+4 Bloodbraid Elf #skill, amirite
+2 Siege-Gang Commander
+2 Broodmate Dragon
+
+Planeswalkers
+2 Garruk Wildspeaker
+
+Spells
+2 Bituminous Blast
+4 Blightning
+4 Lightning Bolt
+3 Maelstrom Pulse
+2 Terminate
+
+Lands
+9 Forest #who needs dual lands
+9 Mountain
+9 Swamp
+
+Sideboard
+1 Bituminous Blast
+2 Deathmark
+2 Duress
+4 Goblin Ruinblaster
+1 Great Sable Stag
+1 Liliana Vess
+1 Malakir Bloodwitch
+1 Master of the Wild Hunt
+1 Mind Rot
+1 Terminate[/deck]]]></example>
+  <active>1</active>
+  <requiresOption>0</requiresOption>
+  <advancedOptions>0</advancedOptions>
+  <numberOfOptions>1</numberOfOptions>
+  <regex></regex>
+  <trimLeadingLinesAfter>0</trimLeadingLinesAfter>
+  <plainCallback>0</plainCallback>
+  <plainChildren>0</plainChildren>
+  <stopSmilies>0</stopSmilies>
+  <stopLineBreakConversion>0</stopLineBreakConversion>
+  <hasButton>1</hasButton>
+  <button_has_usr>0</button_has_usr>
+  <button_usr>a:0:{}</button_usr>
+  <killCmd>0</killCmd>
+  <custCmd></custCmd>
+  <imgMethod>Direct</imgMethod>
+  <buttonDesc>Deck</buttonDesc>
+  <tagOptions></tagOptions>
+  <tagContent></tagContent>
+</bbcode>

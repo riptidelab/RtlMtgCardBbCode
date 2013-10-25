@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bbcode>
+  <tag>ci</tag>
+  <title>Card images</title>
+  <description>Display card images directly in posts by specifying a list of cards.</description>
+  <replacement>
+    <begin><![CDATA[]]></begin>
+    <end><![CDATA[]]></end>
+  </replacement>
+  <phpcallback>
+    <class>RtlMtgCardBbCode_BbCode_Formatter_Base</class>
+    <method>parseCardImage</method>
+  </phpcallback>
+  <example><![CDATA[[ci]Stinkweed Imp
+Life from the Loam
+Raven's Crime
+Faithless Looting[/ci]
+
+[ci="small"]Stinkweed Imp
+Life from the Loam
+Raven's Crime
+Faithless Looting[/ci]]]></example>
+  <active>1</active>
+  <requiresOption>0</requiresOption>
+  <advancedOptions>0</advancedOptions>
+  <numberOfOptions>1</numberOfOptions>
+  <regex></regex>
+  <trimLeadingLinesAfter>0</trimLeadingLinesAfter>
+  <plainCallback>0</plainCallback>
+  <plainChildren>0</plainChildren>
+  <stopSmilies>0</stopSmilies>
+  <stopLineBreakConversion>0</stopLineBreakConversion>
+  <hasButton>1</hasButton>
+  <button_has_usr>0</button_has_usr>
+  <button_usr>a:0:{}</button_usr>
+  <killCmd>0</killCmd>
+  <custCmd></custCmd>
+  <imgMethod>Direct</imgMethod>
+  <buttonDesc>Card Image</buttonDesc>
+  <tagOptions></tagOptions>
+  <tagContent></tagContent>
+</bbcode>

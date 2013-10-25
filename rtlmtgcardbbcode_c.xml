@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bbcode>
+  <tag>c</tag>
+  <title>Card tooltips</title>
+  <description>Link to a Magic card image that is displayed on mouseover.</description>
+  <replacement>
+    <begin><![CDATA[]]></begin>
+    <end><![CDATA[]]></end>
+  </replacement>
+  <phpcallback>
+    <class>RtlMtgCardBbCode_BbCode_Formatter_Base</class>
+    <method>parseTagCard</method>
+  </phpcallback>
+  <example><![CDATA[[c]Bubbling Beebles
+Bursting Beebles[/c]
+
+I feel that cubes need [c="Dromad Purebred"]more camels[/c].]]></example>
+  <active>1</active>
+  <requiresOption>0</requiresOption>
+  <advancedOptions>0</advancedOptions>
+  <numberOfOptions>1</numberOfOptions>
+  <regex></regex>
+  <trimLeadingLinesAfter>0</trimLeadingLinesAfter>
+  <plainCallback>0</plainCallback>
+  <plainChildren>1</plainChildren>
+  <stopSmilies>1</stopSmilies>
+  <stopLineBreakConversion>0</stopLineBreakConversion>
+  <hasButton>1</hasButton>
+  <button_has_usr>0</button_has_usr>
+  <button_usr>a:0:{}</button_usr>
+  <killCmd>0</killCmd>
+  <custCmd></custCmd>
+  <imgMethod>Direct</imgMethod>
+  <buttonDesc>Card Links</buttonDesc>
+  <tagOptions></tagOptions>
+  <tagContent></tagContent>
+</bbcode>

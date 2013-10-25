@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bbcode>
+  <tag>cubedeck</tag>
+  <title>Cube decklist</title>
+  <description>Format and display a cube decklist, arranged by mana cost, using partial card images.</description>
+  <replacement>
+    <begin><![CDATA[]]></begin>
+    <end><![CDATA[]]></end>
+  </replacement>
+  <phpcallback>
+    <class>RtlMtgCardBbCode_BbCode_Formatter_Base</class>
+    <method>parseCubeDeck</method>
+  </phpcallback>
+  <example><![CDATA[[cubedeck="Simic Hexproof (kinda)"]Ones
+1 Arbor Elf
+1 Delver of Secrets
+1 Noble Hierarch
+1 Ancestral Vision
+1 Ponder
+1 Preordain
+
+Twos
+1 Gyre Sage
+1 Looter il-Kor
+1 Life from the Loam
+
+Threes
+1 Edric, Spymaster of Trest
+1 Kira, Great Glass-Spinner
+1 Ohran Viper
+1 Troll Ascetic
+1 Thirst for Knowledge
+
+Fours
+1 Thrun, the Last Troll
+1 Garruk Wildspeaker
+1 Jace, Architect of Thought
+1 Mwonvuli Acid-Moss
+
+Fives
+1 Bribery
+1 Overrun
+1 Plow Under
+Sixes+
+1 Frost Titan
+1 Pelakka Wurm
+1 Simic Sky Swallower
+1 Revenge of the Hunted
+
+Lands
+1 Halimar Depths
+1 Misty Rainforest
+1 Mystifying Maze
+1 Shelldock Isle
+1 Yavimaya Coast
+5 Forest
+5 Island[/cubedeck]]]></example>
+  <active>1</active>
+  <requiresOption>0</requiresOption>
+  <advancedOptions>0</advancedOptions>
+  <numberOfOptions>1</numberOfOptions>
+  <regex></regex>
+  <trimLeadingLinesAfter>0</trimLeadingLinesAfter>
+  <plainCallback>0</plainCallback>
+  <plainChildren>0</plainChildren>
+  <stopSmilies>0</stopSmilies>
+  <stopLineBreakConversion>0</stopLineBreakConversion>
+  <hasButton>1</hasButton>
+  <button_has_usr>0</button_has_usr>
+  <button_usr>a:0:{}</button_usr>
+  <killCmd>0</killCmd>
+  <custCmd></custCmd>
+  <imgMethod>Direct</imgMethod>
+  <buttonDesc>Cube Deck</buttonDesc>
+  <tagOptions></tagOptions>
+  <tagContent></tagContent>
+</bbcode>
