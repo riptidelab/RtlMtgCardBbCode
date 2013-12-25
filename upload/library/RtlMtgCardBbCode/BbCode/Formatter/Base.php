@@ -23,6 +23,8 @@ class RtlMtgCardBbCode_BbCode_Formatter_Base
 
         foreach($cards as &$card) {
             $card = trim($card);
+            if (empty($card))
+            	continue;
             $card = strtolower($card);
             if (strcasecmp($small, "small") == 0) {
                 $card = '<img src="http://gatherer.wizards.com/Handlers/Image.ashx?type=card&name='
