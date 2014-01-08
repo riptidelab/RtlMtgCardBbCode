@@ -286,7 +286,7 @@ class RtlMtgCardBbCode_BbCode_Formatter_Base
         {
             $card = $tag['option'];
             $card = strtolower(trim($card));
-            preg_match('/([\s0-9x-]*)(.*)/', $card, $bits);
+            preg_match('/([\s0-9-]*)(.*)/', $card, $bits);
 
             return $bits[1].'<a href="http://deckbox.org/mtg/'.$bits[2].'">'.$tag['children'][0].'</a>';
         }
@@ -299,8 +299,8 @@ class RtlMtgCardBbCode_BbCode_Formatter_Base
             foreach($cards as &$card) {
                 $card = trim($card);
                 $lcCard = strtolower($card);
-                preg_match('/([\s0-9x-]*)(.*)/', $lcCard, $bits);
-                preg_match('/([\s0-9x-]*)(.*)/', $card, $origBits);
+                preg_match('/([\s0-9-]*)(.*)/', $lcCard, $bits);
+                preg_match('/([\s0-9-]*)(.*)/', $card, $origBits);
                 $card = $bits[1].'<a href="http://deckbox.org/mtg/'.$bits[2].'">'.$origBits[2].'</a>';
             }
 
